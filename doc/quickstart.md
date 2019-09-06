@@ -158,7 +158,7 @@ $user = $userDao->findByLoginAndCountry('on', $country);
 
 Notice how the parameter passed for the foreign key is a bean and not an ID.
 
-Generally, expect in the `getById` method, TDBM will do its best to shield you from passing IDs around. You are expected to use beans instead of ids. It helps writing cleaner code, that is more object oriented and that can benefit from type-hinting.
+Generally, except in the `getById` method, TDBM will do its best to shield you from passing IDs around. You are expected to use beans instead of ids. It helps writing cleaner code, that is more object oriented and that can benefit from type-hinting.
 
 ###Querying the database with filters
 
